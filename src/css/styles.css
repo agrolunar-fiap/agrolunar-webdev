@@ -340,3 +340,38 @@ ul {
 .btn-proximo:hover {
   background: var(--cor-destaque);
 }
+
+/* ---------- Formulario ---------- */
+#form-contato {
+  display: grid;
+  gap: var(--espaco-medio);
+  max-width: 540px;
+}
+
+.campo {
+  display: grid;
+  gap: 6px;
+}
+
+.campo label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: var(--raio);
+  border: 1px solid var(--cor-borda);
+  background: var(--cor-superficie);
+  color: var(--cor-texto);
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: 2px solid var(--cor-destaque);
+  border-color: var(--cor-destaque);
+}
