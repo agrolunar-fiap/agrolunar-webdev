@@ -23,6 +23,7 @@
         <li><a href="#beneficios">Benefícios</a></li>
         <li><a href="#aplicacao">Aplicação</a></li>
         <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -128,6 +129,29 @@
           <button class="btn-anterior" aria-label="Slide anterior">&#10094;</button>
           <button class="btn-proximo" aria-label="Próximo slide">&#10095;</button>
         </div>
+      </div>
+    </section>
+
+    <!-- secao 9 - contato / formulario (JS: src/js/formulario.js) -->
+    <section id="contato" class="secao secao-escura">
+      <div class="secao-inner">
+        <div class="secao-label">09 / Contato</div>
+        <h2>Quero saber mais</h2>
+        <form id="form-contato" novalidate>
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com">
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conta o que você quer saber"></textarea>
+          </div>
+          <button type="submit" class="botao">Enviar</button>
+        </form>
       </div>
     </section>
 
