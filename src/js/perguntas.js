@@ -34,8 +34,8 @@ export const perguntas = [
   {
     enunciado: "Em que ano voou a missão tripulada Artemis II?",
     opcoes: ["2024", "2025", "2026", "2030"],
-    correta: 1,
-    explicacao: "Artemis II voou em 2025, primeira missão tripulada além da órbita baixa desde 1972."
+    correta: 2,
+    explicacao: "Artemis II voou em 2026, primeira missão tripulada além da órbita baixa desde 1972."
   },
   {
     enunciado: "Qual microcontrolador usamos no protótipo AgroLunar?",
