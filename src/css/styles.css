@@ -271,3 +271,72 @@ ul {
     padding: var(--espaco-secao);
   }
 }
+
+/* ============================================================
+   ADICOES DO WEB DEVELOPMENT (slideshow, quiz, formulario, temas)
+   Reusa as variaveis e tokens ja definidos no :root acima.
+   ============================================================ */
+
+/* ---------- Slideshow ---------- */
+.slideshow {
+  position: relative;
+  width: 100%;
+  border-radius: var(--raio);
+  overflow: hidden;
+  background: var(--cor-superficie);
+}
+
+.slide {
+  display: none;
+}
+
+.slide.ativo {
+  display: block;
+  animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.legenda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: var(--espaco-medio);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn-anterior,
+.btn-proximo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 14px;
+  border-radius: var(--raio);
+  transition: background 0.2s;
+}
+
+.btn-anterior { left: var(--espaco-medio); }
+.btn-proximo { right: var(--espaco-medio); }
+
+.btn-anterior:hover,
+.btn-proximo:hover {
+  background: var(--cor-destaque);
+}
