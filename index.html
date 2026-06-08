@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AgroLunar - Cultivo autônomo da Lua a São Paulo</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
@@ -18,15 +19,29 @@
       <ul>
         <li><a href="#problema">Problema</a></li>
         <li><a href="#tecnologia">Tecnologia</a></li>
-        <li><a href="#objetivos">Objetivos</a></li>
-        <li><a href="#publico">Público</a></li>
-        <li><a href="#beneficios">Benefícios</a></li>
-        <li><a href="#aplicacao">Aplicação</a></li>
         <li><a href="#galeria">Galeria</a></li>
         <li><a href="#quiz">Quiz</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
+
+    <!-- troca de tema: o JS le o atributo data-tema (ver src/js/temas.js).
+         Icones da biblioteca Font Awesome (carregada no <head>). -->
+    <div class="temas" aria-label="Trocar tema de cor">
+      <span class="temas-label">Tema</span>
+
+      <button class="btn-tema" data-tema="lunar" title="Tema Lunar" aria-label="Tema Lunar">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+      </button>
+
+      <button class="btn-tema" data-tema="claro" title="Tema Claro" aria-label="Tema Claro">
+        <i class="fa-solid fa-sun" aria-hidden="true"></i>
+      </button>
+
+      <button class="btn-tema" data-tema="alta_visibilidade" title="Tema Alto contraste" aria-label="Tema Alto contraste">
+        <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+      </button>
+    </div>
   </header>
 
   <main>
