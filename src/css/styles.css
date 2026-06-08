@@ -277,6 +277,47 @@ ul {
    Reusa as variaveis e tokens ja definidos no :root acima.
    ============================================================ */
 
+/* ---------- Botoes de troca de tema (no header) ---------- */
+.temas {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.temas-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--cor-texto-secundario);
+  margin-right: 2px;
+}
+
+.btn-tema {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid var(--cor-borda);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--cor-texto-secundario);
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn-tema i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.btn-tema:hover {
+  border-color: var(--cor-destaque);
+  color: var(--cor-destaque);
+}
+
 /* ---------- Slideshow ---------- */
 .slideshow {
   position: relative;
