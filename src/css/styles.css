@@ -341,6 +341,94 @@ ul {
   background: var(--cor-destaque);
 }
 
+/* ---------- Quiz ---------- */
+#quiz-container {
+  margin-top: var(--espaco-grande);
+  padding: var(--espaco-grande);
+  border: 1px solid var(--cor-borda-clara);
+  border-radius: var(--raio);
+}
+
+.pergunta h3 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--cor-destaque);
+  margin-bottom: var(--espaco-pequeno);
+}
+
+.pergunta > p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: var(--espaco-grande);
+}
+
+.opcoes {
+  display: grid;
+  gap: var(--espaco-pequeno);
+}
+
+.opcao {
+  cursor: pointer;
+  text-align: left;
+  border: 1px solid var(--cor-acento);
+  background: transparent;
+  color: inherit;
+  padding: 12px 16px;
+  border-radius: var(--raio);
+  font-family: inherit;
+  font-size: 15px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.opcao:hover:not(:disabled) {
+  background: var(--cor-acento);
+  color: #fff;
+}
+
+.opcao:disabled { cursor: default; opacity: 0.9; }
+
+.opcao-correta {
+  border-color: #2e9e57;
+  background: rgba(46, 158, 87, 0.18);
+}
+
+.opcao-errada {
+  border-color: #d14b3a;
+  background: rgba(209, 75, 58, 0.18);
+}
+
+.feedback-pergunta {
+  margin-top: var(--espaco-grande);
+  padding: var(--espaco-medio);
+  border-radius: var(--raio);
+}
+
+.feedback-pergunta.certo { background: rgba(46, 158, 87, 0.15); }
+.feedback-pergunta.errado { background: rgba(209, 75, 58, 0.15); }
+.feedback-pergunta p { margin-bottom: var(--espaco-medio); }
+
+.btn-proxima,
+.btn-refazer {
+  cursor: pointer;
+  border: none;
+  background: var(--cor-destaque);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: var(--raio);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-proxima:hover,
+.btn-refazer:hover { filter: brightness(0.88); }
+
+.resultado { text-align: center; }
+.resultado h3 { font-size: 26px; margin-bottom: var(--espaco-pequeno); }
+.resultado p { margin-bottom: var(--espaco-grande); }
+
 /* ---------- Formulario ---------- */
 #form-contato {
   display: grid;
